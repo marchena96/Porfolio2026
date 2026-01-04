@@ -18,6 +18,19 @@
         justify-content: center;
         border-radius: 100px;
         color: var(--shade-7);
+
+        &.active {
+            background: #072537;
+            border: 3px solid var(--shade-2);
+        }
+
+        &.sun.active svg {
+            color: gold;
+        }
+
+        &.moon.active svg {
+            color: azure;
+        }
     }
 
 
