@@ -4,9 +4,14 @@ import { useState } from 'react';
 const DarkModeSwitch = () => {
     const [darkMode, setDarkMode] = useState(false);
 
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+
+
     return (<>
         <label className="dark-mode">
-            <input type="checkbox" name="dark-mode" id="dark-mode" />
+            <input type="checkbox" name="dark-mode" id="dark-mode" onChange={toggleDarkMode} />
             <span className={`icon sun ${!darkMode ? 'active' : ''}`}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
