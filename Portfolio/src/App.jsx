@@ -1,4 +1,5 @@
 import Header from "./components/layout/Header"
+import Hero from "./components/layout/Hero";
 
 function App() {
 
@@ -6,9 +7,10 @@ function App() {
     <>
       <div className="container">
         <Header />
+        <Hero />
       </div>
     </>
   )
-}
+};
 
-export default App
+export default App;

@@ -21,7 +21,6 @@ const DarkModeSwitch = () => {
         }
     }, [darkMode]);
 
-
     return (<>
         <label className="dark-mode">
             <input type="checkbox" name="dark-mode" id="dark-mode" onChange={toggleDarkMode} />
